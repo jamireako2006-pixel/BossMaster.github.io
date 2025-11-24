@@ -1,0 +1,81 @@
+:root{
+  --blue:#0A6CFC;
+  --muted:#6b7280;
+  --bg:#f8fafc;
+  --text:#111827;
+  --accent:#38e038;
+  --maxw:1100px;
+  --radius:12px;
+  --gap:20px;
+  --card-bg: #ffffff;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+.container{width:92%;max-width:var(--maxw);margin:0 auto;padding:28px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.site-header{background:#fff;box-shadow:0 1px 6px rgba(2,6,23,0.06);position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:12px;padding:10px 0;text-decoration:none;color:inherit}
+.brand{font-weight:700;font-size:1.05rem}
+.nav a{margin-left:14px;text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:8px}
+.nav a:hover{color:var(--blue);background:rgba(10,108,252,0.06)}
+.nav .cta{background:var(--blue);color:#fff;padding:8px 12px}
+.page main{padding:28px 0}
+
+/* HERO */
+.hero{display:flex;align-items:center;gap:28px;flex-wrap:wrap;padding:30px 0}
+.hero-text{flex:1;min-width:260px}
+.hero h1{font-size:2rem;margin:0 0 8px}
+.lead{color:var(--muted);margin-bottom:16px}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
+.link{margin-left:10px;color:var(--muted);text-decoration:none}
+
+/* FEATURES */
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:36px 0}
+.features article{background:var(--card-bg);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+
+/* CONTENT */
+.content{background:var(--card-bg);padding:24px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+.content h1{margin-top:0}
+.bullets{list-style:disc;margin-left:1.25rem;color:var(--muted)}
+
+/* STATS AND TIPS */
+.stats{margin-top:18px;padding:18px;background:linear-gradient(180deg,rgba(10,108,252,0.06),transparent);border-radius:10px}
+
+/* FORM */
+.static-form{display:grid;gap:12px;max-width:620px}
+.static-form label{display:block;font-size:0.95rem;color:var(--muted)}
+.static-form input[type="text"], .static-form input[type="email"], .static-form select, .static-form textarea{
+  width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:#fff
+}
+.static-form textarea{min-height:100px;resize:vertical}
+.checkbox{display:flex;align-items:center;gap:10px;padding-top:6px}
+.btn{cursor:pointer;border:0}
+
+/* FOOTER */
+.site-footer{padding:18px 0;margin-top:28px;color:var(--muted);font-size:0.9rem;}
+
+/* RESPONSIVENESS */
+@media (max-width:820px){
+  .hero{flex-direction:column-reverse}
+  .nav{display:flex;gap:6px;flex-wrap:wrap}
+}
+.btn:hover {
+    background-color: #292C7B;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #111154;
+    transform: scale(0.98);
+}

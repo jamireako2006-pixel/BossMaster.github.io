@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Think Smart. Click Safe. — CyberSafe PH</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="CyberSafe PH - Digital literacy and cyber safety resources for Filipinos." />
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="CyberSafe PH Home">
+        <!-- simple svg logo -->
+        <svg id="logo" width="42" height="42" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="1" y="1" width="22" height="22" rx="4" fill="#0A6CFC"></rect>
+          <path d="M6 12h12M8 16h8M8 8h8" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <span class="brand">CyberSafe PH</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="cta">Home</a>
+        <a href="what.html">What is Cyber Safety?</a>
+        <a href="tips.html">Stay Safe Tips</a>
+        <a href="contact.html">Pledge / Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Think Smart. Click Safe.</h1>
+        <p class="lead">Simple and practical cyber safety reminders made for every Filipino user.</p>
+        <p><a href="what.html" class="btn">Learn the Basics</a> <a href="tips.html" class="link">Quick Safety Tips →</a></p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="shield">
+          <svg viewBox="0 0 64 64" width="220" height="220" role="img">
+            <path d="M32 4 L56 14 V30 C56 44 44 56 32 60 C20 56 8 44 8 30 V14 Z" fill="#0A6CFC"/>
+            <circle cx="32" cy="30" r="6" fill="#fff"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <article>
+        <h2>Why Cyber Safety Matters</h2>
+        <p>Online scams, phishing, and account takeovers are rising. Cyber literacy helps protect your identity, money, and reputation.</p>
+      </article>
+      <article>
+        <h2>For Students & Families</h2>
+        <p>Practical tips for securing accounts, recognizing fake links, and responsible social media use—especially useful for students and parents.</p>
+      </article>
+      <article>
+        <h2>Take the Pledge</h2>
+        <p>Visit the Pledge page to commit to safer online habits and learn how to report scams.</p>
+      </article>
+    </section>
+
+    <section class="stats">
+      <h3>Quick Facts</h3>
+      <ul>
+        <li>Many online scams target students and online shoppers.</li>
+        <li>A few simple steps (strong passwords, 2FA) drastically reduce your risk.</li>
+        <li>Awareness + habit = long-term safety.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> CyberSafe PH • Think Smart. Click Safe.</small>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a> •
+        <a href="what.html">What is Cyber Safety?</a> •
+        <a href="tips.html">Stay Safe Tips</a> •
+        <a href="contact.html">Pledge</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
